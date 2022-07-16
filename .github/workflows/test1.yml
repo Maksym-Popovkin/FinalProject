@@ -36,7 +36,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run petclinic
         run: 
-          cd spring-petclinic & chmod +x mvnw & ./mvnw & ls -la
+          spring-petclinic/chmod +x mvnw & ./spring-petclinic/mvnw & ls -la spring-petclinic
           
 
       # Runs a set of commands using the runners shell
