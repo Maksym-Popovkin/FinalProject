@@ -37,6 +37,7 @@ jobs:
       - name: Run petclinic
         run: |
           ls -la
+          whoami
           ls -la spring-petclinic
           sudo chmod +x spring-petclinic/mvnw 
           ./mvnw
