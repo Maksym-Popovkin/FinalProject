@@ -37,9 +37,7 @@ jobs:
       - name: Run petclinic
         run: |
           ls -la
-          cd spring-petclinic
-          ls -la
-          sudo chmod +x mvnw 
+          sudo chmod +x spring-petclinic/mvnw 
           ./mvnw
           ls -la spring-petclinic
           
