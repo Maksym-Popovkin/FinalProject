@@ -26,3 +26,4 @@ jobs:
         run: |
           ls -la ${{ github.workspace }}/spring_petclinic
           ls -la spring_petclinic
+          sudo chmod +x spring-petclinic/mvnw
