@@ -3,7 +3,7 @@ on:
   push:
     branches: [master]
 permissions:
-  actions: write
+  actions: all
   checks: write
   contents: write
   deployments: read
