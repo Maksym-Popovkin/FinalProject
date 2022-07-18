@@ -3,18 +3,19 @@ on:
   push:
     branches: [master]
 permissions:
-  actions: read
-  checks: read
-  contents: read
+  actions: write
+  checks: write
+  contents: write
   deployments: read
   issues: read
   discussions: read
   packages: read
   pages: read
   pull-requests: read
-  repository-projects: read
+  repository-projects: write
   security-events: read
   statuses: read
+  
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
