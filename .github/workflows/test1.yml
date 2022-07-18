@@ -48,9 +48,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run petclinic
         run: | 
-          ls -la
+          ls -la ${{ github.workspace }}/spring-petclinic
           whoami
-          cd spring-petclinic
+          cd ${{ github.workspace }}/spring-petclinic
           ls -la
           sudo chmod +x mvnw 
           ./mvnw
