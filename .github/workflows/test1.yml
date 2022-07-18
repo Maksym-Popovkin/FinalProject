@@ -21,4 +21,5 @@ jobs:
         uses: actions/checkout@v3
       - name: List files in the repository
         run: |
-          ls ${{ github.workspace }}/spring_petclinic
+          ls -la ${{ github.workspace }}/spring_petclinic
+          ls -la spring_petclinic
