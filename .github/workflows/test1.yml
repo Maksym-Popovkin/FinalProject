@@ -29,4 +29,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+          ls -la spring_petclinic
+          ls -la ${{ github.workspace }}/spring_petclinic
       - run: echo "🍏 This job's status is ${{ job.status }}."
