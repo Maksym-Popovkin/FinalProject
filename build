@@ -1,0 +1,6 @@
+#!/bin/sh
+
+ls -la
+cd spring_petclinic
+sudo chmod +x mvnw
+./mvnw -B package
