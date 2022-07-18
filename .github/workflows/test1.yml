@@ -20,5 +20,8 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
           cache: maven
+      - shell: bash
+        run: >
+          ./build
       - name: Build with Maven Wrapper
         run: ./build
