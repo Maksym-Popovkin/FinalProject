@@ -1,5 +1,11 @@
 name: GitHub Actions Demo
 on: [push]
+
+permissions:
+  contents: read-all|write-all
+  # Needed for the 'trilom/file-changes-action' action
+  pull-requests: read-all|write-all
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
