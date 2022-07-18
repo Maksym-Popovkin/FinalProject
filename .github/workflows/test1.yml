@@ -19,7 +19,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Clone repo
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
       
       #- name: Setup Java JDK
        # uses: actions/setup-java@v3.4.1
@@ -36,7 +36,8 @@ jobs:
         run: | 
           ls -la
           whoami
-          ls -la spring-petclinic
+          cd spring-petclinic
+          ls -la
           sudo chmod +x spring-petclinic/mvnw 
           ./mvnw
           ls -la spring-petclinic
